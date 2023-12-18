@@ -1,6 +1,6 @@
 # Nonlinear Dynamical Systems
 
-# Bifurcation Diagram
+## Bifurcation Diagram
 
 x_top = 2;
 x_bottom = -2;
@@ -12,7 +12,7 @@ f = @(m,x) -x.^2 + x.^4 +m;
 f1 = @(m,x) -2.*x + 4.*x.^3;
 compute_bifurcation_diagram(f,f1,x_top,x_bottom,m_left,m_right,steps)
 
-# Phase Plane
+## Phase Plane
 
 ax=-4;
 ay=-4;
@@ -26,7 +26,7 @@ f2 = @(x,y,z) -x.^2 - y.^2 + m
 %this matrix only produces imaginary eigenvectors which are ignored
 phase_plane(f1, f2, ax, ay, bx, by, z, A)
 
-# Flow Map
+## Flow Map
 
 % f=@(t,x) sin(x);
 % xrange = -10:0.1:10;
